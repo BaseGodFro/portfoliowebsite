@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David Owusu-Acheaw | Graphic Designer</title>
+
+  <!-- Link to your stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Web fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Site header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">David Owusu‑Acheaw</div>
+      <nav class="nav">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1 class="hero-title">Graphic Designer crafting bold, thoughtful identities.</h1>
+      <p class="hero-sub">Brand systems, typography, campaigns, and visual direction.</p>
+      <div class="hero-cta">
+        <a class="btn-primary" href="#work">View Work</a>
+        <a class="btn-secondary" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Grid -->
+  <section id="work" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Selected Work</h2>
+        <p>Recent projects across identity, posters, and campaigns.</p>
+      </div>
+      <div class="grid">
+        <a class="card" href="#" aria-label="Open Icey Campaign">
+          <img src="images/icey.jpg" alt="Icey Campaign" />
+          <div class="card-info">
+            <h3>Icey Campaign</h3>
+            <span>Campaign • Identity</span>
+          </div>
+        </a>
+        <a class="card" href="#" aria-label="Open Brand System A">
+          <img src="images/icey.jpg" alt="Brand System A" />
+          <div class="card-info">
+            <h3>Brand System A</h3>
+            <span>Identity • Guidelines</span>
+          </div>
+        </a>
+        <a class="card" href="#" aria-label="Open Poster Series">
+          <img src="images/icey.jpg" alt="Poster Series" />
+          <div class="card-info">
+            <h3>Poster Series</h3>
+            <span>Typography • Layout</span>
+          </div>
+        </a>
+        <a class="card" href="#" aria-label="Open Typography Study">
+          <img src="images/icey.jpg" alt="Typography Study" />
+          <div class="card-info">
+            <h3>Typography Study</h3>
+            <span>Type • Exploration</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section section-alt">
+    <div class="container about">
+      <div class="about-text">
+        <h2>About</h2>
+        <p>I’m David, a graphic designer focused on building clear, memorable visual systems. I work across identity, editorial, campaigns, and digital — blending strategy with bold, expressive design.</p>
+        <p>Available for freelance and collaborations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:david.oacheaw@example.com">david.oacheaw@example.com</a></p>
+      <p>Instagram: <a href="#" rel="noopener">@yourhandle</a></p>
+      <p>Resume: <a href="#" download>Download PDF</a></p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year"></span> David Owusu‑Acheaw</span>
+    </div>
+  </footer>
+
+  <!-- Optional: small inline script for year and smooth scroll -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        if (id.length > 1) {
+          e.preventDefault();
+          document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
