@@ -3,7 +3,7 @@
 Modern, image-forward graphic design portfolio (HTML/CSS/JS). Deployed with GitHub Pages.
 
 ## Live Site
-- URL: Add after enabling GitHub Pages (Settings -> Pages)
+- URL: https://basegodfro.github.io/portfoliowebsite/
 
 ## Features
 - Clean layout: header, hero, selected work grid, about, contact
