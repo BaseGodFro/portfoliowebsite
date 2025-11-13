@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>David Owusu-Acheaw | Graphic Designer</title>
+  <title>David Owusu-Acheaw | Graphic Designer Portfolio</title>
 
   <!-- Link to your stylesheet -->
   <link rel="stylesheet" href="style.css" />
@@ -18,7 +18,9 @@
   <!-- Site header -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand">David Owusu‑Acheaw</div>
+      <div class="brand">
+        <span class="brand-text">David Owusu‑Acheaw</span>
+      </div>
       <nav class="nav">
         <a href="#work">Work</a>
         <a href="#about">About</a>
@@ -43,7 +45,7 @@
   <section id="work" class="section">
     <div class="container">
       <div class="section-head">
-        <h2>Selected Work</h2>
+        <h2>Recent Work</h2>
         <p>Recent projects across identity, posters, and campaigns.</p>
       </div>
       <div class="grid">
@@ -62,27 +64,29 @@
           </div>
         </a>
         
-        <a class="card" href="#" aria-label="Open Poster Series">
+        <!--<a class="card" href="#" aria-label="Open Poster Series">
           <img src="images/Artboard 2@3x.png" alt="Poster Series" />
           <div class="card-info">
             <h3>SugarBloom</h3>
             <span>Typography • Layout</span>
           </div>
         </a>
-
+         <!---Commented out Poster Series-->
+         
         <a class="card" href="https://www.behance.net/gallery/206721629/presentations" aria-label="Open Brand System A">
-          <img src="images/Artboard 1-100.jpg" alt="Brand System A" />
+          <img src="images/091.jpg" alt="Brand System A" />
           <div class="card-info">
             <h3>Ecoviva</h3>
             <span>Identity • Guidelines</span>
           </div>
         </a>
-        <a class="card" href="docs/album-covers.pdf" aria-label="Open Typography Study">
+        <a class="card" href="docs/Album-Covers copy.pdf" aria-label="Open Typography Study">
           <img src="images/chy(cd).jpg" alt="Typography Study" />
           <div class="card-info">
             <h3>Posters + Flyers + Album Covers</h3>
             <span>Type • Exploration</span>
           </div>
+        </a>
       </div>
     </div>
   </section>
@@ -95,8 +99,16 @@
     </div>
       <div class="about-text">
         <h2>About</h2> 
-        <p>I’m David, (aka as Frost Designs on socials) graphic designer focused on building clear, memorable visual systems. I work across identity, editorial, campaigns, and digital — blending strategy with bold, expressive design.</p>
-        <p>Available for freelance and collaborations.</p>
+        <p>I started designing at just 10, making
+          graphics and thumbnails for friends and
+          family. After pursuing computer science, I
+          reignited my passion two years ago freelancing,
+          self-learning, and building projects
+          that blend creativity with technical
+          problem-solving. Today, I am stronger
+          than ever blending design and technical
+          skills across every envoronment I’ve
+          worked in .
       </div>
     </div>
   </section>
@@ -105,9 +117,19 @@
   <section id="contact" class="section">
     <div class="container contact">
       <h2>Contact</h2>
+      <form action="https://formspree.io/f/xdkykkbe"method="POST">
+  <label>
+  Your email:
+  <input type="email" name="email">
+  </label>
+  <label>
+   Your message:
+  <textarea name="message"></textarea>
+  </label>
+<button type="submit">Send</button>
+</form>
       <p>Email: <a href="mail">davidowusu9@gmail.com</a></p>
-      <p>Instagram: <a href="#" rel="noopener">@yourhandle</a></p>
-      <p>Resume: <a href="#" download>Download PDF</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/frostdesignss/" rel="noopener">@frostdesigns</a></p>
     </div>
   </section>
 
@@ -117,6 +139,7 @@
       <span>Developed by David Owusu‑Acheaw</span>
     </div>
   </footer>
+
 
   <!-- Optional: small inline script for year and smooth scroll -->
   <script>
@@ -131,5 +154,6 @@
       });
     });
   </script>
+  <script src="script.js"></script>
 </body>
 </html>
