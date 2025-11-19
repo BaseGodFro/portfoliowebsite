@@ -1,34 +1,26 @@
 # David Owusu-Acheaw Portfolio
 
-Modern, image-forward graphic design portfolio (HTML/CSS/JS). Deployed with GitHub Pages.
+This repo hosts my personal portfolio: a single-page experience that curates brand systems, UI explorations, and poster work with custom art direction and motion-inspired hover states.
 
 ## Live Site
-- URL: https://basegodfro.github.io/portfoliowebsite/
+- https://basegodfro.github.io/portfoliowebsite/
 
-## Features
-- Clean layout: header, hero, selected work grid, about, contact
-- Blue/white theme (customizable via CSS variables)
-- Responsive 12-column grid and hover cards
+## Highlights
+- Responsive 12-column grid that pairs high-res imagery with concise project blurbs.
+- Hero, work grid, about, and contact sections crafted specifically for my freelance pipeline.
+- Formspree-backed contact form plus smooth-scrolling navigation for a polished UX.
 
-## Tech
-- HTML5, CSS3 (Inter + Playfair Display), vanilla JS (smooth scroll + year)
+## Stack
+- HTML5 + semantic structure
+- CSS3 with custom typography (Inter + Playfair Display), grid/flex utilities, and glassmorphism accents
+- Vanilla JavaScript for anchor scroll, dynamic year stamp, and external link handling
 
-## Customize
-- Colors: edit CSS variables in `style.css` under `:root`
-- Projects: update cards in `index.html` under `#work`
-- Contact: update links in `#contact`
-
-## Local Development
-Open `index.html` in a browser (no build needed). For a simple local server:
+## Local Preview
+Open `index.html` directly in a browser or start a lightweight server:
 ```bash
 python3 -m http.server 5173
+open http://localhost:5173
 ```
-Then open `http://localhost:5173`.
-
-## Deploy (GitHub Pages)
-1. Push to `main`
-2. In GitHub: Settings -> Pages -> Deploy from branch -> `main` / root
-3. Wait 1-3 minutes, then open the provided URL
 
 ---
 © David Owusu-Acheaw
