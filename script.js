@@ -1,13 +1,16 @@
-// Scroll Animations - Repeat on every scroll
+// Scroll Animations - Highly Impactful and Memorable
 const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
+  threshold: 0.2,
+  rootMargin: '0px 0px -150px 0px' // Trigger earlier for anticipation
 };
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
+      // Add visible class with slight delay for more dramatic effect
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, 100);
     } else {
       // Remove visible class when element leaves viewport so animation can replay
       entry.target.classList.remove('visible');
@@ -19,6 +22,8 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-in').forEach(el => {
   observer.observe(el);
 });
+
+// Removed parallax effect on hero text - keeping it static for better readability
 
 // Lightbox/Gallery Functionality
 const lightbox = document.getElementById('lightbox');
