@@ -39,19 +39,19 @@
 
   <section id="work" class="section">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head fade-in">
         <h2>Recent Work</h2>
         <p>Recent projects across identity, posters, and campaigns.</p>
       </div>
       <div class="grid">
-             <a class="card" href="docs/potenttial draft.pdf" aria-label="Open Typography Study">
+             <a class="card fade-in fade-in-delay-1" href="docs/potenttial draft.pdf" aria-label="Open Typography Study" data-image="images/newshush.png" data-title="NextRound" data-subtitle="UI/UX • Case Study">
           <img src="images/newshush.png" alt="Typography Study" />
           <div class="card-info">
             <h3>NextRound</h3>
             <span>UI/UX • Case Study</span>
           </div>
         </a>
-        <a class="card" href="https://www.behance.net/gallery/238392951/FrostFlip-(UI-Design)-Snowboarding-Event" aria-label="Open Icey Campaign">
+        <a class="card fade-in fade-in-delay-2" href="https://www.behance.net/gallery/238392951/FrostFlip-(UI-Design)-Snowboarding-Event" aria-label="Open Icey Campaign" data-image="images/ff.jpg" data-title="FrostFlip" data-subtitle="UI Design • Identity">
           <img src="images/ff.jpg" alt="frostflip Campaign" />
           <div class="card-info">
             <h3>FrostFlip</h3>
@@ -59,14 +59,14 @@
           </div>
         </a>
         
-        <a class="card" href="https://www.behance.net/gallery/206721629/presentations" aria-label="Open Brand System A">
+        <a class="card fade-in fade-in-delay-3" href="https://www.behance.net/gallery/206721629/presentations" aria-label="Open Brand System A" data-image="images/091.jpg" data-title="Ecoviva" data-subtitle="Identity • Guidelines">
           <img src="images/091.jpg" alt="Brand System A" />
           <div class="card-info">
             <h3>Ecoviva</h3>
             <span>Identity • Guidelines</span>
           </div>
         </a>
-        <a class="card" href="docs/Album-Covers copy.pdf" aria-label="Open Typography Study">
+        <a class="card fade-in fade-in-delay-1" href="docs/Album-Covers copy.pdf" aria-label="Open Typography Study" data-image="images/chy(cd).jpg" data-title="Posters + Flyers + Album Covers" data-subtitle="Type • Exploration">
           <img src="images/chy(cd).jpg" alt="Typography Study" />
           <div class="card-info">
             <h3>Posters + Flyers + Album Covers</h3>
@@ -79,10 +79,10 @@
 
   <section id="about" class="section section-alt">
     <div class="container about">
-      <div class="about-image">
+      <div class="about-image fade-in">
       <img src="images/IMG_2018.jpg" alt="David Owusu-Acheaw" />
     </div>
-      <div class="about-text">
+      <div class="about-text fade-in fade-in-delay-1">
         <h2>About</h2> 
         <p>I started designing at just 10, making
           graphics and thumbnails for friends and
@@ -92,7 +92,7 @@
           that blend creativity with technical
           problem-solving. Today, I am stronger
           than ever blending design and technical
-          skills across every envoronment I’ve
+          skills across every envoronment I've
           worked in .
       </div>
     </div>
@@ -100,7 +100,7 @@
 
   <section id="contact" class="section">
     <div class="container contact">
-      <h2>Contact</h2>
+      <h2 class="fade-in">Contact</h2>
       <form action="https://formspree.io/f/xdkykkbe" method="POST">
         <div class="form-group">
           <label>
@@ -127,6 +127,17 @@
       <span>Developed by David Owusu‑Acheaw</span>
     </div>
   </footer>
+
+  <!-- Lightbox/Gallery Modal -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">›</button>
+    <div class="lightbox-content">
+      <img class="lightbox-image" id="lightboxImage" src="" alt="">
+      <div class="lightbox-info" id="lightboxInfo"></div>
+    </div>
+  </div>
 
 
   <script>
