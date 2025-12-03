@@ -193,3 +193,44 @@ if (contactForm) {
     modal.classList.remove('active');
   });
 }
+
+// Finisher Header initialization for hero section (desktop-friendly, more dramatic)
+window.addEventListener('load', () => {
+  if (window.FinisherHeader) {
+    new FinisherHeader({
+      "count": 90,
+      "size": {
+        "min": 1,
+        "max": 20,
+        "pulse": 0
+      },
+      "speed": {
+        "x": {
+          "min": 0,
+          "max": 0.4
+        },
+        "y": {
+          "min": 0,
+          "max": 1.7
+        }
+      },
+      "colors": {
+        "background": "#2558a2",
+        "particles": [
+          "#ffffff",
+          "#87ddfe"
+        ]
+      },
+      "blending": "screen",
+      "opacity": {
+        "center": 0,
+        "edge": 0.7
+      },
+      "skew": 0,
+      "shapes": [
+        "s",
+        "t"
+      ]
+    });
+  }
+});
